@@ -179,3 +179,64 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ========================================
+# Angular / Node.js
+# ========================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Angular
+/dist
+/tmp
+/out-tsc
+/bazel-out
+.angular/
+
+# Angular build artifacts
+*.js.map
+*.ngfactory.ts
+*.ngsummary.json
+*.metadata.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Package manager locks (optional - 看團隊需求)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
