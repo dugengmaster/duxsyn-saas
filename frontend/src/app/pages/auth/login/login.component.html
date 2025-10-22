@@ -1,1 +1,71 @@
-<p>login works!</p>
+<div class="login-container">
+  <div class="login-card">
+    <!-- Logo / Title -->
+    <div class="login-header">
+      <h1>登入</h1>
+      <p>使用您的帳號登入系統</p>
+    </div>
+
+    <!-- 錯誤訊息 -->
+    <div *ngIf="errorMessage" class="error-alert">
+      {{ errorMessage }}
+    </div>
+
+    <!-- 登入表單 -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <!-- 帳號 -->
+      <div class="form-group">
+        <label for="username">帳號</label>
+        <input
+          id="username"
+          type="text"
+          formControlName="username"
+          placeholder="請輸入帳號"
+          [class.error]="getFieldError('username')"
+        />
+        <span class="error-message" *ngIf="getFieldError('username')">
+          {{ getFieldError('username') }}
+        </span>
+      </div>
+
+      <!-- 密碼 -->
+      <div class="form-group">
+        <label for="password">密碼</label>
+        <div class="password-input">
+          <input
+            id="password"
+            [type]="hidePassword ? 'password' : 'text'"
+            formControlName="password"
+            placeholder="請輸入密碼"
+            [class.error]="getFieldError('password')"
+          />
+          <button
+            type="button"
+            class="toggle-password"
+            (click)="hidePassword = !hidePassword"
+          >
+            {{ hidePassword ? '👁️' : '👁️‍🗨️' }}
+          </button>
+        </div>
+        <span class="error-message" *ngIf="getFieldError('password')">
+          {{ getFieldError('password') }}
+        </span>
+      </div>
+
+      <!-- 提交按鈕 -->
+      <button
+        type="submit"
+        class="submit-button"
+        [disabled]="isSubmitting"
+      >
+        <span *ngIf="!isSubmitting">登入</span>
+        <span *ngIf="isSubmitting">登入中...</span>
+      </button>
+    </form>
+
+    <!-- 其他連結 -->
+    <div class="login-footer">
+      <p>還沒有帳號？ <a routerLink="/auth/sign-up">註冊</a></p>
+    </div>
+  </div>
+</div>
