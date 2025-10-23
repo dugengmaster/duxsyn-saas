@@ -1,6 +1,6 @@
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
-import { AuthStore } from './auth.store';
+import { AuthStore } from '../auth/auth.store';
 
 /**
  * 認證路由守衛（函數式）
