@@ -25,4 +25,4 @@ testem.log
 __screenshots__/
 
 # nx
-.nx/cache
+.nx/
