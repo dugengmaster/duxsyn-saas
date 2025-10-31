@@ -1,0 +1,852 @@
+{
+  "projects/lib": {
+    "root": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "projects/lib/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.0": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.1": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.2": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.3": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.4": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.5": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.6": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.7": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.8": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.9": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.10": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.type": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.standalone": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.changeDetection": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.skipTests": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.inlineStyle": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.inlineTemplate": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service.type": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service.skipTests": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.type": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.standalone": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.skipTests": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.typeSeparator": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.standalone": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.skipTests": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:guard": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:guard.typeSeparator": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:interceptor": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:interceptor.typeSeparator": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:resolver": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:resolver.typeSeparator": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.tsConfig": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "projects/lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "projects/client": {
+    "root": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.0": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.1": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.2": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.3": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.4": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.5": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.6": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.7": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.8": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.9": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.defaultConfiguration.10": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.type": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.standalone": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.changeDetection": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.skipTests": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:component.inlineStyle": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service.type": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:service.skipTests": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.type": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.standalone": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:directive.skipTests": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.typeSeparator": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.standalone": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:pipe.skipTests": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:guard": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:guard.typeSeparator": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:interceptor": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:interceptor.typeSeparator": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:resolver": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@nx/angular:resolver.typeSeparator": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.browser": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.polyfills": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.assets": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.styles": [
+      "projects/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "projects/demo": {
+    "root": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.browser": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.polyfills": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.assets": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.styles": [
+      "projects/demo/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

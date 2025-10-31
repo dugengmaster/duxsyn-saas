@@ -1,0 +1,103 @@
+# Folder structure for D:\Projects\poc\duxsyn-saas\frontend\projects
+
+├── client
+│   ├── .postcssrc.json
+│   ├── docs
+│   ├── project.json
+│   ├── public
+│   │   └── favicon.ico
+│   ├── README.md
+│   ├── src
+│   │   ├── app
+│   │   │   ├── app.component.ts
+│   │   │   ├── app.config.ts
+│   │   │   ├── app.routes.ts
+│   │   │   ├── app.spec.ts
+│   │   │   ├── configs
+│   │   │   ├── core
+│   │   │   │   ├── auth
+│   │   │   │   ├── guards
+│   │   │   │   └── interceptors
+│   │   │   ├── layouts
+│   │   │   ├── modules
+│   │   │   ├── pages
+│   │   │   │   ├── admin
+│   │   │   │   │   ├── dashboard
+│   │   │   │   │   ├── monitor
+│   │   │   │   │   ├── system-settings
+│   │   │   │   │   └── user-management
+│   │   │   │   ├── auth
+│   │   │   │   │   ├── forgot-password
+│   │   │   │   │   ├── login
+│   │   │   │   │   ├── register
+│   │   │   │   │   └── reset-password
+│   │   │   │   ├── landing
+│   │   │   │   │   ├── about
+│   │   │   │   │   ├── contact
+│   │   │   │   │   ├── features
+│   │   │   │   │   ├── home
+│   │   │   │   │   ├── legal
+│   │   │   │   │   ├── news
+│   │   │   │   │   └── pricing
+│   │   │   │   ├── main
+│   │   │   │   │   ├── analytics
+│   │   │   │   │   ├── dashboard
+│   │   │   │   │   ├── notifications
+│   │   │   │   │   └── user
+│   │   │   │   └── status
+│   │   │   │       ├── access-denied
+│   │   │   │       ├── maintenance
+│   │   │   │       ├── not-found
+│   │   │   │       └── session-expired
+│   │   │   └── shared
+│   │   │       ├── components
+│   │   │       └── services
+│   │   ├── environment
+│   │   ├── index.html
+│   │   ├── main.ts
+│   │   ├── mocks
+│   │   └── styles.css
+│   ├── tsconfig.app.json
+│   └── tsconfig.spec.json
+├── demo
+│   ├── .postcssrc.json
+│   ├── project.json
+│   ├── public
+│   │   └── favicon.ico
+│   ├── src
+│   │   ├── app
+│   │   │   ├── app.config.ts
+│   │   │   ├── app.css
+│   │   │   ├── app.html
+│   │   │   ├── app.routes.ts
+│   │   │   ├── app.spec.ts
+│   │   │   └── app.ts
+│   │   ├── index.html
+│   │   ├── main.ts
+│   │   └── styles.css
+│   ├── tsconfig.app.json
+│   └── tsconfig.spec.json
+└── lib
+    ├── components
+    │   ├── actions
+    │   ├── data-display
+    │   ├── data-input
+    │   │   ├── affix-input.component.ts
+    │   │   ├── data-input.types.ts
+    │   │   ├── floating-input.component.ts
+    │   │   ├── ng-package.json
+    │   │   └── public-api.ts
+    │   ├── feedback
+    │   ├── layout
+    │   ├── mockup
+    │   └── navigation
+    ├── i18n
+    ├── ng-package.json
+    ├── package.json
+    ├── project.json
+    ├── public-api.ts
+    ├── README.md
+    ├── templates
+    ├── tsconfig.lib.json
+    ├── tsconfig.lib.prod.json
+    └── tsconfig.spec.json

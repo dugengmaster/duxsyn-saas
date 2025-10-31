@@ -1,0 +1,111 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "client",
+  "projectType": "application",
+  "generators": {
+    "defaultConfiguration": "@nx/angular",
+    "@nx/angular:component": {
+      "type": "component",
+      "standalone": true,
+      "changeDetection": "OnPush",
+      "skipTests": true,
+      "inlineStyle": true
+    },
+    "@nx/angular:service": {
+      "type": "service",
+      "skipTests": true
+    },
+    "@nx/angular:directive": {
+      "type": "directive",
+      "standalone": true,
+      "skipTests": true
+    },
+    "@nx/angular:pipe": {
+      "typeSeparator": ".",
+      "standalone": true,
+      "skipTests": true
+    },
+    "@nx/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@nx/angular:resolver": {
+      "typeSeparator": "."
+    }
+  },
+  "sourceRoot": "projects/client/src",
+  "prefix": "dux",
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "options": {
+        "browser": "projects/client/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "projects/client/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "projects/client/public"
+          }
+        ],
+        "styles": ["projects/client/src/styles.css"],
+        "outputPath": "dist/client"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kB",
+              "maximumError": "1MB"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kB",
+              "maximumError": "8kB"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": ["{options.outputPath}"]
+    },
+    "serve": {
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "client:build:production"
+        },
+        "development": {
+          "buildTarget": "client:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n"
+    },
+    "test": {
+      "executor": "@angular/build:karma",
+      "options": {
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "tsConfig": "projects/client/tsconfig.spec.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "projects/client/public"
+          }
+        ],
+        "styles": ["projects/client/src/styles.css"]
+      }
+    }
+  }
+}

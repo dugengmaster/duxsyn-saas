@@ -1,0 +1,19 @@
+<div class="min-h-screen flex items-center justify-center bg-base-200 p-4">
+  <div class="w-full max-w-md space-y-4">
+    <h1 class="text-3xl font-bold text-center mb-8">DaisyNG Test</h1>
+
+    <daisy-floating-input
+      type="email"
+      label="email"
+      name="email"
+      required
+      placeholder="example@email.com"
+      size="md"
+      errorText="err msg"
+    />
+    <daisy-affix-input prefix="abc://" placeholder="URL" size="md" />
+  </div>
+  
+</div>
+
+<router-outlet />

@@ -1,0 +1,28 @@
+# ============================================
+# Frontend - Angular / nx / Node.js
+# ============================================
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Angular / nx
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+__screenshots__/
+
+# nx
+.nx/cache

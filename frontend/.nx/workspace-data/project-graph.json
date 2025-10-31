@@ -1,0 +1,385 @@
+{
+  "nodes": {
+    "client": {
+      "name": "client",
+      "type": "app",
+      "data": {
+        "root": "projects/client",
+        "name": "client",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "sourceRoot": "projects/client/src",
+        "prefix": "dux",
+        "generators": {
+          "defaultConfiguration": "@nx/angular",
+          "@nx/angular:component": {
+            "type": "component",
+            "standalone": true,
+            "changeDetection": "OnPush",
+            "skipTests": true,
+            "inlineStyle": true
+          },
+          "@nx/angular:service": {
+            "type": "service",
+            "skipTests": true
+          },
+          "@nx/angular:directive": {
+            "type": "directive",
+            "standalone": true,
+            "skipTests": true
+          },
+          "@nx/angular:pipe": {
+            "typeSeparator": ".",
+            "standalone": true,
+            "skipTests": true
+          },
+          "@nx/angular:guard": {
+            "typeSeparator": "."
+          },
+          "@nx/angular:interceptor": {
+            "typeSeparator": "."
+          },
+          "@nx/angular:resolver": {
+            "typeSeparator": "."
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "@angular/build:application",
+            "options": {
+              "browser": "projects/client/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "projects/client/tsconfig.app.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "projects/client/public"
+                }
+              ],
+              "styles": [
+                "projects/client/src/styles.css"
+              ],
+              "outputPath": "dist/client"
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kB",
+                    "maximumError": "1MB"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "4kB",
+                    "maximumError": "8kB"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "optimization": false,
+                "extractLicenses": false,
+                "sourceMap": true
+              }
+            },
+            "defaultConfiguration": "production",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "parallelism": true,
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ]
+          },
+          "serve": {
+            "executor": "@angular/build:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "client:build:production"
+              },
+              "development": {
+                "buildTarget": "client:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "extract-i18n": {
+            "executor": "@angular/build:extract-i18n",
+            "configurations": {},
+            "options": {},
+            "parallelism": true
+          },
+          "test": {
+            "executor": "@angular/build:karma",
+            "options": {
+              "polyfills": [
+                "zone.js",
+                "zone.js/testing"
+              ],
+              "tsConfig": "projects/client/tsconfig.spec.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "projects/client/public"
+                }
+              ],
+              "styles": [
+                "projects/client/src/styles.css"
+              ]
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ]
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
+    "demo": {
+      "name": "demo",
+      "type": "app",
+      "data": {
+        "root": "projects/demo",
+        "name": "demo",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "sourceRoot": "projects/demo/src",
+        "prefix": "app",
+        "generators": {},
+        "targets": {
+          "build": {
+            "executor": "@angular/build:application",
+            "options": {
+              "browser": "projects/demo/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "projects/demo/tsconfig.app.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "projects/demo/public"
+                }
+              ],
+              "styles": [
+                "projects/demo/src/styles.css"
+              ],
+              "outputPath": "dist/demo"
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kB",
+                    "maximumError": "1MB"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "4kB",
+                    "maximumError": "8kB"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "optimization": false,
+                "extractLicenses": false,
+                "sourceMap": true
+              }
+            },
+            "defaultConfiguration": "production",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "parallelism": true,
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ]
+          },
+          "serve": {
+            "executor": "@angular/build:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "demo:build:production"
+              },
+              "development": {
+                "buildTarget": "demo:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "extract-i18n": {
+            "executor": "@angular/build:extract-i18n",
+            "configurations": {},
+            "options": {},
+            "parallelism": true
+          },
+          "test": {
+            "executor": "@angular/build:karma",
+            "options": {
+              "polyfills": [
+                "zone.js",
+                "zone.js/testing"
+              ],
+              "tsConfig": "projects/demo/tsconfig.spec.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "projects/demo/public"
+                }
+              ],
+              "styles": [
+                "projects/demo/src/styles.css"
+              ]
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ]
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
+    "lib": {
+      "name": "lib",
+      "type": "lib",
+      "data": {
+        "root": "projects/lib",
+        "name": "lib",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {},
+          "js": {
+            "packageName": "@duxsyn/daisy-ng",
+            "packageVersion": "0.0.1",
+            "isInPackageManagerWorkspaces": false
+          }
+        },
+        "targets": {
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "@angular/build:ng-packagr",
+            "configurations": {
+              "production": {
+                "tsConfig": "projects/lib/tsconfig.lib.prod.json"
+              },
+              "development": {
+                "tsConfig": "projects/lib/tsconfig.lib.json"
+              }
+            },
+            "defaultConfiguration": "production",
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ]
+          },
+          "test": {
+            "executor": "@angular/build:karma",
+            "options": {
+              "tsConfig": "projects/lib/tsconfig.spec.json"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ]
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "projects/lib/src",
+        "prefix": "daisy",
+        "generators": {
+          "defaultConfiguration": "@nx/angular",
+          "@nx/angular:component": {
+            "type": "component",
+            "standalone": true,
+            "changeDetection": "OnPush",
+            "skipTests": true,
+            "inlineStyle": true,
+            "inlineTemplate": true
+          },
+          "@nx/angular:service": {
+            "type": "service",
+            "skipTests": true
+          },
+          "@nx/angular:directive": {
+            "type": "directive",
+            "standalone": true,
+            "skipTests": true
+          },
+          "@nx/angular:pipe": {
+            "typeSeparator": ".",
+            "standalone": true,
+            "skipTests": true
+          },
+          "@nx/angular:guard": {
+            "typeSeparator": "."
+          },
+          "@nx/angular:interceptor": {
+            "typeSeparator": "."
+          },
+          "@nx/angular:resolver": {
+            "typeSeparator": "."
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "client": [],
+    "demo": [],
+    "lib": []
+  },
+  "version": "6.0",
+  "errors": [],
+  "computedAt": 1761944980795
+}

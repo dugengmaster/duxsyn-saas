@@ -1,0 +1,90 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "demo",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "projects/demo/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "options": {
+        "browser": "projects/demo/src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "projects/demo/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "projects/demo/public"
+          }
+        ],
+        "styles": [
+          "projects/demo/src/styles.css"
+        ],
+        "outputPath": "dist/demo"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kB",
+              "maximumError": "1MB"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kB",
+              "maximumError": "8kB"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "serve": {
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "demo:build:production"
+        },
+        "development": {
+          "buildTarget": "demo:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n"
+    },
+    "test": {
+      "executor": "@angular/build:karma",
+      "options": {
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ],
+        "tsConfig": "projects/demo/tsconfig.spec.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "projects/demo/public"
+          }
+        ],
+        "styles": [
+          "projects/demo/src/styles.css"
+        ]
+      }
+    }
+  }
+}
