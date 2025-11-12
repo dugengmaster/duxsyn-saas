@@ -5,10 +5,10 @@
   "compilerOptions": {
     "paths": {
       "@duxsyn/daisy-ng": [
-        "./dist/daisy-ng"
+        "./projects/lib"
       ],
       "@duxsyn/daisy-ng/*":[
-        "./dist/daisy-ng/*"
+        "./projects/lib/*"
       ],
     },
     "strict": true,

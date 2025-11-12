@@ -3,3 +3,10 @@
 @plugin "daisyui" {
 
 }
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.5;
+}
+
+ng-icon { overflow: visible !important; }
